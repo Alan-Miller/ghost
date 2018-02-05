@@ -13,8 +13,8 @@ function Header(props) {
   return (
     <section className="Header">
 
-      {['Blinky', 'Pinky', 'Inky', 'Clyde'].map((ghost_name, index) => (
-        <div key={index} onClick={() => editGhost(ghost_name)}>
+      {['Blinky', 'Pinky', 'Inky', 'Clyde'].map(ghost_name => (
+        <div key={ghost_name} onClick={() => editGhost(ghost_name)}>
           <Ghost ghost_name={ghost_name} />
         </div>
       ))}
