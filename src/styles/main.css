@@ -1,0 +1,90 @@
+h1 {
+  font-size: 3rem;
+  margin-top: 20px;
+  color: rgb(200, 200, 200);
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: rgb(200, 200, 200); */
+  background-color: rgb(70, 70, 70);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Header {
+  height: 150px;
+  width: 100vw;
+  background-color: rgb(30, 30, 30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(200, 200, 200);
+}
+
+.dashedBorder {
+  width: 50vh;
+  height: 50vh;
+  border: 20px dashed rgb(200, 200, 200);
+  position: relative;
+  top: calc(50vh - 75px);
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashedBorder .Ghost {
+  height: 200px;
+  width: 200px;
+}
+.Header .Ghost {
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+}
+.Ghost {
+  border-radius: 50% 50% 3% 3%;
+  position: relative;
+  margin: 0 20px;
+}
+.eye {
+  background-color: whitesmoke;
+  height: 30%;
+  width: 25%;
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translateX(-90%);
+  border-radius: 45%;
+}
+.right {
+  left: 50%;
+  transform: translateX(70%);
+}
+.eye:before {
+  content: '';
+  height: 40%;
+  width: 44%;
+  background-color: rgba(57, 110, 187, 1.00);
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  border-radius: 10%;
+}
+.Blinky {
+  background-color: rgba(255, 0, 87, 1.00);
+}
+.Pinky {
+  background-color: rgba(255, 44, 143, 1.00);
+}
+.Inky {
+  background-color: rgba(61, 207, 220, 1.00);
+}
+.Clyde {
+  background-color: rgba(255, 115, 0, 1.00);
+}
+.___ {
+  border: 10px solid whitesmoke;
+}
